@@ -84,33 +84,31 @@ const Footer=()=>{
                   Settings
                 </a>
               </p>
-              <p>
+             <p>
                 <a href='#!' className='text-reset'>
-                  Orders
-                </a>
-              </p>
-              <p>
-                <a href='#!' className='text-reset'>
+                   Orders
+                 </a>
+               </p>
+               <p>
+                 <a href='#!' className='text-reset'>
                   Help
-                </a>
+                 </a>
               </p>
             </MDBCol>
 
-            <MDBCol md="4" lg="3" xl="3" className='mx-auto mb-md-0 mb-4'>
-              <h6 className='text-uppercase fw-bold mb-4'>Contact</h6>
-              <p>
-                <MDBIcon icon="home" className="me-2" />
-                New York, NY 10012, US
-              </p>
-              <p>
-                <MDBIcon icon="envelope" className="me-3" />
-                info@example.com
-              </p>
-              <p>
-                <MDBIcon icon="phone" className="me-3" /> + 01 234 567 88
-              </p>
-              <p>
-                <MDBIcon icon="print" className="me-3" /> + 01 234 567 89
+             <MDBCol md="4" lg="3" xl="3" className='mx-auto mb-md-0 mb-4'>
+               <h6 className='text-uppercase fw-bold mb-4'>Contact</h6>
+               <p>
+                 <MDBIcon icon="home" className="me-2" />
+                 New York, NY 10012, US
+               </p>
+               <p>
+                 <MDBIcon icon="envelope" className="me-3" />
+                 info@example.com
+               </p>
+               <p>
+                <MDBIcon icon="phone" className="me-3" /> + 01 234 567 88               </p>
+              <p>                 <MDBIcon icon="print" className="me-3" /> + 01 234 567 89
               </p>
             </MDBCol>
           </MDBRow>
@@ -119,14 +117,17 @@ const Footer=()=>{
 
       <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
         © 2024 Copyright:
-        <a className='text-reset fw-bold' href='https://cybrombhopal.com/'>
+         <a className='text-reset fw-bold' href='https://cybrombhopal.com/'>
           Cybrom.com
-        </a>
-      </div>
+         </a>
+       </div>
+     
     </MDBFooter>
+    
         </>
     )
-}
+ }
 
 
-export default Footer;
+
+ export default Footer;
