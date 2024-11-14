@@ -35,7 +35,7 @@ const Home=()=>{
          
 
 
-          <h1 align="center"> Our Trending Collections</h1>
+          <h1 align="center"> brands</h1>
         </>
     )
 }
