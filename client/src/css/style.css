@@ -2,7 +2,8 @@
 {
     padding: 10px;
     text-align: right;
-    background-color: rgba(161, 138, 20, 0.368);
+    background-color: rgba(219, 199, 137, 0.897);
+  
 }
 
 .space 
@@ -13,6 +14,59 @@
 #footer
 {
     padding: 40px;
-    background-color: rgb(12, 8, 8);
+    background-color: rgb(71, 69, 69);
     color: white;
+}
+
+#adminHeader
+{
+    height: 100px;
+    background-color: lightblue;
+}
+
+#adminData
+{
+    display: flex;
+    justify-content: space-between;
+}
+#adminMenu
+{
+    width: 20%;
+    background-color: black;
+    color: white;
+
+}
+#adminContent
+{
+     padding-left: 30px; 
+    width:80%
+}
+
+.menucolor
+{
+    color: whitesmoke;
+}
+
+#carddata
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#headerPart
+{
+    position:sticky;
+    top: 0;
+    z-index: 1;
+}
+h5{
+    text-align: center;
+    justify-content: center;
+   margin-top: 20px;
+ height: 0px;
+}
+#theme img{
+    margin-left: 20px;
+   
 }

@@ -46,9 +46,10 @@ const Header=()=>{
     return(
         <>
           <div id="header">
-            {cardLength}
-   
-          <FaShoppingCart  />
+         
+           <h5>Free shiiping above 799</h5>  
+          {cardLength}
+          <FaShoppingCart  className="icon" />
           
          <a href="#" onClick={handleShow} > 
           <RiAdminFill className="space" />

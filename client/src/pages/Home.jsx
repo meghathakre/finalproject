@@ -24,7 +24,7 @@ const Home=()=>{
   },[]);
 
   const addcardData=(id,name,desc,categ,price,image)=>{
-    dispatch(addToCard({id:id,name:name,description:desc,category:categ,price:price,image:image}))
+    dispatch(addToCard({id:id,name:name,description:desc,category:categ,price:price,image:image,qnty:1}))
   }
 
 

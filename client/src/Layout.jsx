@@ -7,10 +7,10 @@ import Footer from "./components/Footer";
 const Layout=()=>{
     return(
         <>
-    
+    <div id="headerPart">
     <Header/>
          <TopMenu/>
-  
+         </div>
           <Outlet/>        
 
          <Footer/>

@@ -1,4 +1,6 @@
-const ProductModel=require("../models/productModel");
+
+const productModel = require("../models/productModel");
+
 
 
 const productSave=async(req, res)=>{
@@ -16,12 +18,17 @@ const productSave=async(req, res)=>{
 
 const showProduct=async(req, res)=>{
 
-   const data= await ProductModel.find();
+   const data= await productModel.find();
     res.send(data);
+}
+const productDetail=async(req,res)=>{
+    const Data=await productModel.findById(req.body.id);
+    res.send(Data);
 }
 
 
 module.exports={
     productSave,
-    showProduct
+    showProduct,
+    productDetail
 }
