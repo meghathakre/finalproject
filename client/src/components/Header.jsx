@@ -47,10 +47,11 @@ const Header=()=>{
         <>
           <div id="header">
          
-           <h5>Free shiiping above 799</h5>  
+           <h5>Get 50% Discount On Your fisrt Order Use Cupponcode <a href="">Fisrt50</a></h5>  
           {cardLength}
+          <a href="#"  onClick={()=>{navigate("/carddata")}}>
           <FaShoppingCart  className="icon" />
-          
+          </a>
          <a href="#" onClick={handleShow} > 
           <RiAdminFill className="space" />
           </a>
@@ -66,13 +67,13 @@ const Header=()=>{
         </Modal.Header>
         <Modal.Body>
           Admin Area for Manage your Website
-          <br/>
-          Enter Admin  : <input type="text" value={username}
+          <br/><br />
+          Enter   Admin :   < input type="text" value={username}
            onChange={(e)=>{setUsername(e.target.value)}} />
-          <br/>
-          Enter Password :  <input type="password" value={password}
+          <br/><br />
+          Enter Password: <input type="password" value={password}
           onChange={(e)=>{setPassword(e.target.value)}}/>
-          <br/>
+          <br/><br />
          
 
 
@@ -81,7 +82,7 @@ const Header=()=>{
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
-          <Button variant="primary" onClick={handleSubmit}>
+          <Button variant="dark" onClick={handleSubmit}>
             Login
           </Button>
         </Modal.Footer>

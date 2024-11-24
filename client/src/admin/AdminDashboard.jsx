@@ -11,7 +11,7 @@ const AdminDashboard=()=>{
         <div id="adminData">
             <div id="adminMenu">
                 <Link to="insertpro" className="menucolor">Insert product</Link>
-
+<Link to="insertallpro" className="allpro">Insert products</Link>
             </div>
             <div id="adminContent">
 <Outlet/>

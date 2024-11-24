@@ -8,10 +8,15 @@ import Card from 'react-bootstrap/Card';
 import {useDispatch} from 'react-redux';
 import { addToCard } from '../pages/cardSlice';
 import { useEffect, useState } from 'react';
+import video from "../images/quin.mp4";
+
+import { useNavigate } from 'react-router-dom';
+import { IoIosStar } from "react-icons/io";
 
 const Home=()=>{
   const [mydata ,setMydata]=useState([]);
   const dispatch=useDispatch();
+  const navigate= useNavigate();
   const loadData=()=>{
     let api="http://localhost:8000/product/showproduct";
     axios.get(api).then((res)=>{
@@ -32,8 +37,17 @@ const Home=()=>{
     return(
       <>
       <Card style={{ width: '18rem', marginTop:'20px' }}>
+        <a href="#" onClick={()=>{navigate(`/prodetail/${key._id}`)}}>
       <Card.Img variant="top" src={key.image} style={{height:'300px'}} />
-      <Card.Body>
+      </a>
+      <div className="star">
+      <IoIosStar />
+      <IoIosStar />
+      <IoIosStar />
+      <IoIosStar />
+      <IoIosStar />
+      </div>
+       <Card.Body>
         <Card.Title>{key.name}</Card.Title>
         <Card.Text>
           {key.description}
@@ -53,38 +67,37 @@ const Home=()=>{
   })
     return(
         <>
-           
+        
            <Carousel>
       <Carousel.Item>
           <img src={ban1} width="100%" height="500" />
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
       <img src={ban2} width="100%" height="500" />
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
       <img src={ban3} width="100%" height="500" />
         <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
+       
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
-         
+         <br />
 
-    <h1 align="center"> Our Trending Collections</h1>
+    <h1 align="center"> Trendy collection</h1>
     <div id="carddata">
         {ans}
         </div>
+        <div>
+    <video controls="autoplay" loop="muted" id="myvideo" width="400px" height="400px" borderRedius="250%"> <source src={video} alt="video/mp4" />
+    </video>
+    </div>
         </>
     )
 }

@@ -2,7 +2,7 @@
 {
     padding: 10px;
     text-align: right;
-    background-color: rgba(219, 199, 137, 0.897);
+    background-color: rgba(216, 179, 235, 0.897);
   
 }
 
@@ -11,17 +11,17 @@
     margin-left: 20px;
 }
 
-#footer
+.footer
 {
     padding: 40px;
-    background-color: rgb(71, 69, 69);
+    background-color: rgb(30, 28, 30);
     color: white;
 }
 
 #adminHeader
 {
     height: 100px;
-    background-color: lightblue;
+    background-color: rgb(48, 174, 174);
 }
 
 #adminData
@@ -66,7 +66,28 @@ h5{
    margin-top: 20px;
  height: 0px;
 }
-#theme img{
-    margin-left: 20px;
+
+.icon{
+    color: black;
+
+}
+.star{
+    
+    color: rgb(205, 132, 24);
+  margin-left: 5px;
+}
+.theme{
+    display: flex;
+}
+.theme h3{
    
+    
+   margin-top: 100px;
+  margin-left: -80px;
+}
+.theme img{
+    margin-left: 100px;
+}
+.me-auto{
+        
 }

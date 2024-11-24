@@ -41,7 +41,7 @@ const CardData=()=>{
                 </a>
                 </td>
                 <td>
-                    {key.prcie*key.qnty}
+                    {key.price*key.qnty}
 
                 </td>
                 <td>

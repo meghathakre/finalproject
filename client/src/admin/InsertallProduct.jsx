@@ -2,7 +2,7 @@ import Button from "react-bootstrap/Button";
 import Form from 'react-bootstrap/Form';
 import { useState } from "react";
 import axios from "axios";
-const InsertProduct=()=>{
+const InsertallProduct=()=>{
 const[input,setInput]=useState({});
 const[myimage,setMyimage]=useState();
 
@@ -28,14 +28,14 @@ const handleSubmit=async(e)=>{
 console.log('Image uploaded:',response.data);
 console.log('Image uploaded:',response.data.url)
     
-let api1="http://localhost:8000/product/productsave";
-axios.post(api1,{...input,image:response.data.url}).then((res)=>{
+let api2="http://localhost:8000/product/allproductsave";
+axios.post(api2,{...input,image:response.data.url}).then((res)=>{
     alert("Data Save");
 })
 }
 return(
     <>
-    <h1>Insert New Produtc</h1>
+    <h1>Insert Products</h1>
     <Form style={{width:'300px'}}>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Enter Product name</Form.Label>
@@ -52,10 +52,13 @@ return(
       value={input.category} onChange={handleInput} >
       <option value="lipstick">lipstick</option>
       <option value="kajal">kajal</option>
-      <option value="foundation">face</option>
-      <option value="foundation">hair</option>
-      <option value="foundation">nails</option>
-      <option value="foundation">body</option>
+      <option value="face">face</option>
+      <option value="hair">hair</option>
+      <option value="nails">nails</option>
+      <option value="body">body</option>
+      <option value=" baby care body">baby care</option>
+
+
       </Form.Select>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Enter Price</Form.Label>
@@ -73,4 +76,4 @@ return(
     </>
 )
 }
-export default InsertProduct;
+export default InsertallProduct;
