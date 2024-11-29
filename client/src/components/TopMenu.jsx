@@ -29,8 +29,8 @@ const TopMenu=()=>{
             <Nav.Link href="#link">Contact us</Nav.Link>
             <NavDropdown title="Category" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Face</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-               Skin
+              <NavDropdown.Item as={Link} to="lips" >
+               lipstick
               </NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">Hair</NavDropdown.Item>
             

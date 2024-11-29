@@ -31,6 +31,7 @@ const CardData=()=>{
                 <img src={key.image} width="100" height="100"/></td>
                 <td>{key.name}</td>
                 <td>{key.description}</td>
+                <td>{key.category}</td>
                 <td>{key.price}</td>
                 <td>
                 <a href="#" onClick={()=>{qntyDec(key.id)}}>

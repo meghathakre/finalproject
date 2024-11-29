@@ -35,8 +35,8 @@ axios.post(api1,{...input,image:response.data.url}).then((res)=>{
 }
 return(
     <>
-    <h1>Insert New Produtc</h1>
-    <Form style={{width:'300px'}}>
+    <h1 className="newhead" >Insert New Product</h1>
+    <Form className="form" style={{width:'300px'}}>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Enter Product name</Form.Label>
         <Form.Control type="text" name="name" 

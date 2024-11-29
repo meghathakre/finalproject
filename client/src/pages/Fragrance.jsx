@@ -3,15 +3,15 @@ import axios from 'axios';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { useDispatch } from 'react-redux';
-import { addToCard } from '../pages/cardSlice';
+import { addToCard } from './cardSlice';
 import { useNavigate } from 'react-router-dom';
 
-const Lipstick=()=>{
+const Fragrance=()=>{
 const [mydata, setMydata]=useState([]);
 const dispatch= useDispatch();
 const navigate= useNavigate();
   const loadData=()=>{
-    let api="http://localhost:8000/product/showallproduct?category=lips";
+    let api="http://localhost:8000/product/showfragproduct?category=frag";
     axios.get(api).then((res)=>{
       setMydata(res.data);
       console.log(res.data);
@@ -62,7 +62,7 @@ const navigate= useNavigate();
          
 
 
-          <h1 align="center"> Lipstick Collections</h1>
+          <h1 align="center"> Fragrance Collections</h1>
         <div id="carddata">
         {ans}
         </div>
@@ -71,4 +71,4 @@ const navigate= useNavigate();
     )
 }
 
-export default Lipstick;
+export default Fragrance;
